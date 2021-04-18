@@ -18,3 +18,8 @@ Keeping the steps to a minimum, scripts and base configuration files are already
     }
   ```
 5. Star the repository (Optional :)
+
+## Future plans
+
+- Add complete directory structure.
+- Add initial files for quick bootstrapping.
