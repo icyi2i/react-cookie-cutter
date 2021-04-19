@@ -1,3 +1,6 @@
+# Remove cookcie-cutter repo and Initialize new git repository
+rm -rf .git/
+git init
 # Initialize your application
 npm init
 # Web server - express
@@ -14,3 +17,6 @@ npm i babel-loader @babel/core @babel/node @babel/preset-env @babel/preset-react
 npm i eslint babel-eslint eslint-plugin-react eslint-plugin-react-hooks --save-dev
 # Testing - jest
 npm i jest babel-jest react-test-renderer --save-dev
+
+# Clean up (Avoid accidently calling this)
+rm setup.sh
