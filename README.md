@@ -8,7 +8,7 @@ Keeping the steps to a minimum, scripts and base configuration files are already
 
 1. Clone the repository, or download and extract the zip package.
 2. Rename the outer folder `react-cookie-cutter` to name of the project.
-3. Run `setup.sh` in cmd or bash. (Initializes npm package and installs the dependencies.)
+3. Run `python setup.py` in cmd or bash. (Configure npm package.)
 
    **Note** : This will remove any previous git repo files in .git folder
 

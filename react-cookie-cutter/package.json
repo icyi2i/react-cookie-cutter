@@ -1,0 +1,51 @@
+{
+  "name": "react-cookie-cutter",
+  "version": "1.0.0",
+  "description": "A minimal react setup for rapid development!",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev:server": "nodemon --exec babel-node src/server/server.js --ignore dist/",
+    "dev:bundler": "webpack -w --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icyi2i/react-cookie-cutter.git"
+  },
+  "keywords": [
+    "react",
+    "cookiecutter",
+    "template",
+    "express"
+  ],
+  "author": "Sarthak Gambhir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icyi2i/react-cookie-cutter/issues"
+  },
+  "homepage": "https://github.com/icyi2i/react-cookie-cutter#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.0.2",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "eslint": "^7.27.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "jest": "^27.0.3",
+    "nodemon": "^2.0.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  }
+}

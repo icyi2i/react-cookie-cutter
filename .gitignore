@@ -1,2 +1,5 @@
 # NPM packages
 node_modules/
+
+# Test folder for this repo
+__test__/
