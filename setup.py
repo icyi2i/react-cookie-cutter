@@ -1,18 +1,35 @@
 import json
 import os
+import sys
 
-# os.system("git clone https://github.com/icyi2i/react-cookie-cutter.git")
+
+# if not (
+#     os.path.exists("react-cookie-cutter") and
+#     os.path.isdir("react-cookie-cutter")):
+
+#     print("# Cloning the git repository : @icyi2i/react-cookie-cutter")
+#     os.system("git clone https://github.com/icyi2i/react-cookie-cutter.git")
+
 os.chdir("react-cookie-cutter")
-# os.unlink(".git")
+
+print("# Initializing new empty git repository...")
+
+if os.path.exists(".git") and os.path.isdir(".git"):
+    os.unlink(".git")
+
 os.system("git init")
+
+print("# Installing required node modules...")
 os.system("npm install")
 
 with open("package.json") as f:
     package = json.load(f)
 
 print("Enter the following details. Leave empty for default values:")
+
 name = input(
     f"- name ({package['name']}) :")
+
 description = input(
     f"- description ({package['description']}) :")
 
@@ -36,3 +53,5 @@ if len(name):
     os.renames(
         os.path.join(os.getcwd(), "react-cookie-cutter"),
         os.path.join(os.getcwd(), name))
+
+os.remove(sys.argv[0])
