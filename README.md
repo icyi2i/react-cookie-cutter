@@ -12,7 +12,7 @@ Keeping the steps to a minimum, scripts and base configuration files are already
 2. Rename the outer folder `react-cookie-cutter` to name of the project.
 3. Run `python setup.py` in cmd or bash. (Configure npm package.)
 
-   ``` shell
+   ``` console
    root@lab:~/projects/tooth_fairy# python3 setup.py
    # Initializing new empty git repository...
    Initialized empty Git repository in /root/projects/tooth_fairy/react-cookie-cutter/.git/
@@ -37,7 +37,7 @@ Keeping the steps to a minimum, scripts and base configuration files are already
 Within the app folder run the command `npm run dev:bundler`.
 This bundles all js components from **src** folder into **dist/static/main.js** file.
 
-   ``` shell
+   ``` console
    root@lab:~/projects/tooth_fairy/tooth_fairy# npm run dev:bundler
 
    > tooth_fairy@1.0.0 dev:bundler
@@ -67,7 +67,7 @@ This bundles all js components from **src** folder into **dist/static/main.js** 
 After successful build, express server can be started from **dist** folder
 using command `node server.js`
 
-``` bash
+``` console
 root@lab:~/projects/tooth_fairy/tooth_fairy/dist# node server.js
 App server listening on port localhost:5000!
 ```
